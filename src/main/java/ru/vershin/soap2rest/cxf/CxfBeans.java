@@ -4,7 +4,6 @@ import org.apache.camel.component.cxf.CxfEndpoint;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.tempuri.Calculator;
 import org.tempuri.CalculatorSoap;
 
 @Configuration
@@ -21,4 +20,6 @@ public class CxfBeans {
         cxf.setServiceClass(CalculatorSoap.class);
         return cxf;
     }
+
+
 }
